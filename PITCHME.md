@@ -30,7 +30,7 @@ WHERE LastName = 'Seagal';
 
 /* SESSION 2 */
 SELECT FirstName, LastName 
-FROM Person 
+FROM Person WITH (NOLOCK) 
 WHERE LastName = 'Seagal';
 ```
 
