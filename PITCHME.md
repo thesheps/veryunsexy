@@ -4,7 +4,7 @@ An [unglamorous] series of technical software development workshops.
 
 #HSLIDE
 
-## Transactional Concurrency
+### Transactional Concurrency
 
 > A transaction consists of a single command or a group of commands that execute as a package. In concurrent systems, there are often scenarios in which competing transactions must be catered for.
 
