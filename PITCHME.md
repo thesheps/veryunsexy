@@ -2,18 +2,26 @@
 
 An [unglamorous] series of technical software development workshops.
 
-#VSLIDE
+#HSLIDE
 
 # Transactional Concurrency
 
-#HSLIDE
+#VSLIDE
 
-Transactional Concurrenct Content 1
+# Transactional Concurrenct Content 1
 
 #VSLIDE
 
-# Other Stuff
+# Transactional Concurrenct Content 2
 
 #HSLIDE
 
-Other Stuff Content 1
+# Other Content
+
+#VSLIDE
+
+# Other Content 1
+
+#VSLIDE
+
+# Other Content 2
