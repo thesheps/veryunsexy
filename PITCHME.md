@@ -6,7 +6,7 @@ An [unglamorous] series of technical software development workshops.
 
 # Transactional Concurrency
 
-#HSLIDE
+#VSLIDE
 
 > A transaction consists of a single command or a group of commands that execute as a package. In concurrent systems, there are often scenarios in which competing transactions must be catered for.
 
@@ -36,4 +36,4 @@ WHERE LastName = 'Seagal';
 
 #VSLIDE
 
-# Transactional Concurrenct Content 2
+# Lost Updates
