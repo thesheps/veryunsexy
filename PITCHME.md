@@ -6,22 +6,32 @@ An [unglamorous] series of technical software development workshops.
 
 # Transactional Concurrency
 
+> A transaction consists of a single command or a group of commands that execute as a package. In concurrent systems, there are often scenarios in which competing transactions must be catered for.
+
+This is not easy.
+
 #VSLIDE
 
-# Transactional Concurrenct Content 1
+## Dirty Reads
+
+```sql
+/* SESSION 1 */
+BEGIN TRANSACTION;
+UPDATE Person
+SET FirstName = 'Steven'
+WHERE LastName = 'Seagal';
+WAITFOR DELAY '00:00:05.000';
+ROLLBACK TRANSACTION;
+SELECT FirstName, LastName
+FROM Person
+WHERE LastName = 'Seagal';
+
+/* SESSION 2 */
+SELECT FirstName, LastName 
+FROM Person 
+WHERE LastName = 'Seagal';
+```
 
 #VSLIDE
 
 # Transactional Concurrenct Content 2
-
-#HSLIDE
-
-# Other Content
-
-#VSLIDE
-
-# Other Content 1
-
-#VSLIDE
-
-# Other Content 2
