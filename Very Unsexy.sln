@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{FB688644-35FB-4E5D-BB96-C7CABF4D15A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A2703FDD-C935-4541-A0B9-E58476A66FE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionalConcurrency.Data", "TransactionalConcurrency\src\TransactionalConcurrency.Data\TransactionalConcurrency.Data.csproj", "{4576D87A-CFCB-4EB7-9FE6-70A36F8A1261}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionalConcurrency.NHibernateImplementation", "TransactionalConcurrency\src\TransactionalConcurrency.NHibernateImplementation\TransactionalConcurrency.NHibernateImplementation.csproj", "{A8CBC1A1-3CB9-446D-8E09-78EDD0ED5EA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionalConcurrency.NHibernateImplementation.Tests", "TransactionalConcurrency\tests\TransactionalConcurrency.NHibernateImplementation.Tests\TransactionalConcurrency.NHibernateImplementation.Tests.csproj", "{4AAAA0C5-BAF8-44A0-AF6C-CC22F81A46E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionalConcurrency.DapperImplementation", "TransactionalConcurrency\src\TransactionalConcurrency.DapperImplementation\TransactionalConcurrency.DapperImplementation.csproj", "{D5007428-D7C3-4929-BFD5-E80B656E2C16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionalConcurrency.DapperImplementation.Tests", "TransactionalConcurrency\tests\TransactionalConcurrency.DapperImplementation.Tests\TransactionalConcurrency.DapperImplementation.Tests.csproj", "{DAECDA75-4015-4499-B0CA-76715CDA4C73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionalConcurrency.Tests.Common", "TransactionalConcurrency\tests\TransactionalConcurrency.Tests.Common\TransactionalConcurrency.Tests.Common.csproj", "{26D61B29-CC23-4FC9-8E73-12A7105AA0A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionalConcurrency.AdoImplementation", "TransactionalConcurrency\src\TransactionalConcurrency.AdoImplementation\TransactionalConcurrency.AdoImplementation.csproj", "{910AC561-24E3-4A33-BB2D-14B6412BA4AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionalConcurrency.AdoImplementation.Tests", "TransactionalConcurrency\tests\TransactionalConcurrency.AdoImplementation.Tests\TransactionalConcurrency.AdoImplementation.Tests.csproj", "{9F534A61-8633-4D58-A2F3-B88206E495C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Transactional Concurrency", "Transactional Concurrency", "{7E9DFA81-D38E-4D60-AE6C-4AFDD1731583}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeryUnsexy", "VeryUnsexy\VeryUnsexy.csproj", "{AE53DED9-A148-4924-8E6F-5880B1E68D39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4576D87A-CFCB-4EB7-9FE6-70A36F8A1261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4576D87A-CFCB-4EB7-9FE6-70A36F8A1261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4576D87A-CFCB-4EB7-9FE6-70A36F8A1261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4576D87A-CFCB-4EB7-9FE6-70A36F8A1261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8CBC1A1-3CB9-446D-8E09-78EDD0ED5EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8CBC1A1-3CB9-446D-8E09-78EDD0ED5EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8CBC1A1-3CB9-446D-8E09-78EDD0ED5EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8CBC1A1-3CB9-446D-8E09-78EDD0ED5EA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AAAA0C5-BAF8-44A0-AF6C-CC22F81A46E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AAAA0C5-BAF8-44A0-AF6C-CC22F81A46E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AAAA0C5-BAF8-44A0-AF6C-CC22F81A46E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AAAA0C5-BAF8-44A0-AF6C-CC22F81A46E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5007428-D7C3-4929-BFD5-E80B656E2C16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5007428-D7C3-4929-BFD5-E80B656E2C16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5007428-D7C3-4929-BFD5-E80B656E2C16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5007428-D7C3-4929-BFD5-E80B656E2C16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAECDA75-4015-4499-B0CA-76715CDA4C73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAECDA75-4015-4499-B0CA-76715CDA4C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAECDA75-4015-4499-B0CA-76715CDA4C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAECDA75-4015-4499-B0CA-76715CDA4C73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26D61B29-CC23-4FC9-8E73-12A7105AA0A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26D61B29-CC23-4FC9-8E73-12A7105AA0A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26D61B29-CC23-4FC9-8E73-12A7105AA0A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26D61B29-CC23-4FC9-8E73-12A7105AA0A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{910AC561-24E3-4A33-BB2D-14B6412BA4AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{910AC561-24E3-4A33-BB2D-14B6412BA4AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{910AC561-24E3-4A33-BB2D-14B6412BA4AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{910AC561-24E3-4A33-BB2D-14B6412BA4AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F534A61-8633-4D58-A2F3-B88206E495C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F534A61-8633-4D58-A2F3-B88206E495C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F534A61-8633-4D58-A2F3-B88206E495C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F534A61-8633-4D58-A2F3-B88206E495C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE53DED9-A148-4924-8E6F-5880B1E68D39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE53DED9-A148-4924-8E6F-5880B1E68D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE53DED9-A148-4924-8E6F-5880B1E68D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE53DED9-A148-4924-8E6F-5880B1E68D39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FB688644-35FB-4E5D-BB96-C7CABF4D15A2} = {7E9DFA81-D38E-4D60-AE6C-4AFDD1731583}
+		{A2703FDD-C935-4541-A0B9-E58476A66FE1} = {7E9DFA81-D38E-4D60-AE6C-4AFDD1731583}
+		{4576D87A-CFCB-4EB7-9FE6-70A36F8A1261} = {FB688644-35FB-4E5D-BB96-C7CABF4D15A2}
+		{A8CBC1A1-3CB9-446D-8E09-78EDD0ED5EA6} = {FB688644-35FB-4E5D-BB96-C7CABF4D15A2}
+		{4AAAA0C5-BAF8-44A0-AF6C-CC22F81A46E8} = {A2703FDD-C935-4541-A0B9-E58476A66FE1}
+		{D5007428-D7C3-4929-BFD5-E80B656E2C16} = {FB688644-35FB-4E5D-BB96-C7CABF4D15A2}
+		{DAECDA75-4015-4499-B0CA-76715CDA4C73} = {A2703FDD-C935-4541-A0B9-E58476A66FE1}
+		{26D61B29-CC23-4FC9-8E73-12A7105AA0A3} = {A2703FDD-C935-4541-A0B9-E58476A66FE1}
+		{910AC561-24E3-4A33-BB2D-14B6412BA4AA} = {FB688644-35FB-4E5D-BB96-C7CABF4D15A2}
+		{9F534A61-8633-4D58-A2F3-B88206E495C1} = {A2703FDD-C935-4541-A0B9-E58476A66FE1}
+	EndGlobalSection
+EndGlobal
