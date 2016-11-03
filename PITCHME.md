@@ -45,7 +45,7 @@ WHERE LastName = 'Seagal';
 ## Lost Updates
 
 ```sql
-/* SESSION 1*/
+/* SESSION 1 */
 DECLARE @SafetyStockLevel int = 0, @Uplift int = 10;
 BEGIN TRAN;
 SELECT @SafetyStockLevel = SafetyStockLevel FROM Product
@@ -58,7 +58,7 @@ WHERE ProductID = 1;
 ```
 
 ```sql
-/* SESSION 2*/
+/* SESSION 2 */
 DECLARE @SafetyStockLevel int = 0, @Uplift int = 100;
 BEGIN TRAN;
 SELECT @SafetyStockLevel = SafetyStockLevel FROM Product
@@ -70,6 +70,41 @@ WHERE ProductID = 1;
 SELECT SafetyStockLevel
 COMMIT TRAN;
 ```
+
 #VSLIDE
 
 # SafetyStockLevel = 100
+
+#VSLIDE
+
+## Some Solutions
+
+- Read Committed
+Ensures only committed data is read into new transactions.
+
+```sql
+*/ Session 1 */
+BEGIN TRAN
+UPDATE emp SET Salary=999 WHERE ID=1
+WAITFOR DELAY '00:00:15'
+COMMIT    
+```
+
+```sql
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED
+SELECT Salary FROM Emp WHERE ID=1
+```
+
+#VSLIDE
+
+- Optimistic Concurrency
+Compares a timestamp or row version in each update, raising an exception if not rows are updated.
+
+```sql
+BEGIN TRAN
+UPDATE emp SET Salary=999 WHERE ID=1 & TimeStamp = '2016-11-03 21:23:00'
+IF @@ROWCOUNT = 0
+BEGIN
+  RAISERROR ('Concurrency Exception Encountered!', 16, 1)
+END
+```
