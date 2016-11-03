@@ -27,7 +27,9 @@ ROLLBACK TRANSACTION;
 SELECT FirstName, LastName
 FROM Person
 WHERE LastName = 'Seagal';
+```
 
+```sql
 /* SESSION 2 */
 SELECT FirstName, LastName 
 FROM Person WITH (NOLOCK) 
@@ -45,7 +47,6 @@ BEGIN TRAN;
 SELECT @SafetyStockLevel = SafetyStockLevel FROM Product
 WHERE ProductID = 1;
 SET @SafetyStockLevel = @SafetyStockLevel + @Uplift;
-WAITFOR DELAY '00:00:05.000';
 UPDATE Product
 SET SafetyStockLevel = @SafetyStockLevel
 WHERE ProductID = 1;
@@ -55,8 +56,7 @@ WHERE ProductID = 1;
 /* SESSION 2*/
 DECLARE @SafetyStockLevel int = 0, @Uplift int = 100;
 BEGIN TRAN;
-SELECT @SafetyStockLevel = SafetyStockLevel
-FROM Product
+SELECT @SafetyStockLevel = SafetyStockLevel FROM Product
 WHERE ProductID = 1;
 SET @SafetyStockLevel = @SafetyStockLevel + @Uplift;
 UPDATE Product
