@@ -112,3 +112,13 @@ BEGIN
   RAISERROR ('Concurrency Exception Encountered!', 16, 1)
 END
 ```
+
+#VSLIDE
+
+## Look at the Code!
+
+(TransactionalConcurrency.sln)
+
+#HSLIDE
+
+# Dependency Injection
