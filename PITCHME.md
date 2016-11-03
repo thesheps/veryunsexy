@@ -98,6 +98,8 @@ SELECT Salary FROM Emp WHERE ID=1
 
 #VSLIDE
 
+## Some Solutions
+
 - Optimistic Concurrency
 
 Compares a timestamp or row version in each update, raising an exception if no rows are updated.
