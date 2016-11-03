@@ -80,6 +80,7 @@ COMMIT TRAN;
 ## Some Solutions
 
 - Read Committed
+
 Ensures only committed data is read into new transactions.
 
 ```sql
@@ -98,11 +99,12 @@ SELECT Salary FROM Emp WHERE ID=1
 #VSLIDE
 
 - Optimistic Concurrency
+
 Compares a timestamp or row version in each update, raising an exception if not rows are updated.
 
 ```sql
 BEGIN TRAN
-UPDATE emp SET Salary=999 WHERE ID=1 & TimeStamp = '2016-11-03 21:23:00'
+UPDATE emp SET Salary=999 WHERE ID=1 & Time = '2016-11-03 21:23:00'
 IF @@ROWCOUNT = 0
 BEGIN
   RAISERROR ('Concurrency Exception Encountered!', 16, 1)
