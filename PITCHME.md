@@ -121,4 +121,4 @@ END
 
 #HSLIDE
 
-# Dependency Injection
+# dependency Inversion
