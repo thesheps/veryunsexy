@@ -20,7 +20,7 @@ This is not easy.
 /* SESSION 1 */
 BEGIN TRANSACTION;
 UPDATE Person
-SET FirstName = 'Steven'
+SET FirstName = 'Brian'
 WHERE LastName = 'Seagal';
 WAITFOR DELAY '00:00:05.000';
 ROLLBACK TRANSACTION;
@@ -38,6 +38,10 @@ WHERE LastName = 'Seagal';
 
 #VSLIDE
 
+#Who is Brian Seagal?
+
+#VSLIDE
+
 ## Lost Updates
 
 ```sql
@@ -47,6 +51,7 @@ BEGIN TRAN;
 SELECT @SafetyStockLevel = SafetyStockLevel FROM Product
 WHERE ProductID = 1;
 SET @SafetyStockLevel = @SafetyStockLevel + @Uplift;
+WAITFOR DELAY '00:00:05.000';
 UPDATE Product
 SET SafetyStockLevel = @SafetyStockLevel
 WHERE ProductID = 1;
@@ -65,3 +70,6 @@ WHERE ProductID = 1;
 SELECT SafetyStockLevel
 COMMIT TRAN;
 ```
+#VSLIDE
+
+# SafetyStockLevel = 100
