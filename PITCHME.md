@@ -100,7 +100,7 @@ SELECT Salary FROM Emp WHERE ID=1
 
 - Optimistic Concurrency
 
-Compares a timestamp or row version in each update, raising an exception if not rows are updated.
+Compares a timestamp or row version in each update, raising an exception if no rows are updated.
 
 ```sql
 BEGIN TRAN
