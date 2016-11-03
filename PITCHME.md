@@ -49,7 +49,9 @@ WAITFOR DELAY '00:00:05.000';
 UPDATE Product
 SET SafetyStockLevel = @SafetyStockLevel
 WHERE ProductID = 1;
+```
 
+```sql
 /* SESSION 2*/
 DECLARE @SafetyStockLevel int = 0, @Uplift int = 100;
 BEGIN TRAN;
